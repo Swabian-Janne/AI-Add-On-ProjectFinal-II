@@ -30,9 +30,10 @@ form {
   background-color: #1fd4e0;
   box-shadow: 0 4px 12px rgba(31, 30, 30, 0.1);
   display: flex;
+  width: 100%;
   gap: 10px;
 }
-.ingredients-input {
+.ingredients {
   flex: 1;
   padding: 14px;
   font-size: 16px;
@@ -48,10 +49,32 @@ form {
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+  white-space: nowrap;
 }
 .button:hover {
   opacity: 0.8;
 }
+
+.hidden {
+  display: none;
+}
+.recipe-result {
+  margin-top: 50px;
+  padding: 30px;
+  background: #ffffff;
+  border-left: 6px solid #1fd4e0;
+  border-radius: 12px;
+  text-align: left;
+  line-height: 1.9;
+  font-size: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.recipe-result h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
 footer {
   margin-top: 30px;
   font-size: 14px;
